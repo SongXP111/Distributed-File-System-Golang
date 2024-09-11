@@ -10,4 +10,5 @@ type Peer interface {
 // (TCP, UDP, websockets, ...)
 // Transport 通常用于处理节点之间的通信
 type Transport interface {
+	ListenAndAccept() error
 }
